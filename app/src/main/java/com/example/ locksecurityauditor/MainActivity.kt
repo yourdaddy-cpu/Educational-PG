@@ -87,7 +87,7 @@ fun LockAuditorScreen() {
 
         Card(modifier = Modifier.fillMaxWidth()) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                Text("Brute-force Time (Android 12+)", fontWeight = FontWeight.Bold)
+                Text("Brute-force Time Simulation", fontWeight = FontWeight.Bold)
                 OutlinedTextField(
                     value = length,
                     onValueChange = { length = it.filter { c -> c.isDigit() }.take(2) },
@@ -108,7 +108,7 @@ fun LockAuditorScreen() {
         }
 
         Text(
-            "Disclaimer: This tool does not bypass locks or access other people's devices. Use only on devices you own.",
+            "Disclaimer: This tool does not bypass locks or access other people's devices. It simulates modern Android security policies (Android 12+). Older devices may have weaker lockout rules.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.error
         )
