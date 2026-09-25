@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.locksecurityauditor"
-        minSdk = 31
+        minSdk = 23  // <--- CHANGED! Now works on Android 6.0+
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
